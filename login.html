@@ -18,23 +18,15 @@
                 </div>
                 <nav>
                     <ul> 
-                        <li class="current"><a href="index.html">Home</a></li>    
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="booking.html">Book Courts</a></li>
-                        <li><a href="browsing.html">Browse Courts</a></li>
+                        <li><a href="index.html">Home</a></li>    
+                        <li class="current"><a href="login.html">Login</a></li>
+                        <li><a href="booking.html">Booking</a></li>
                         <li><a href="contact _us.html">Contact</a></li>
                         <li><a href="about.html">About us</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-
-        <section id="showcase">
-            <div class="container">
-                <h1>One Website To Rule Them All, Squash Courts That is!</h1>
-                <p>You can login to book a court or you can browse to find your local squash court and start playing!!</p>
-            </div>
-        </section>
         <section id="newsletter">
             <div class="container">
                 <h1>Subcribe to our news letter, find out whats happening in the world of squash in Ireland</h1>
@@ -44,23 +36,36 @@
                 </form>
             </div>
         </section>
-
-        <section id="boxes">
+        <section id="login">
             <div class="container">
-                <div class="box">
-                    <a href="booking.html">
-                        <img src="/images/bookcourt.png" alt="Book Courts" >
-                     </a>
-                    <h3>Book Courts</h3>
+              <form action="action_page.php" method="post">
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <button type="submit">Login</button>
+                  <label> <input type="checkbox" checked="checked" name="remember">Remember me</label>
                 </div>
-                <div class="box">
-                    <a href="booking.html"><img src="/images/browse_court.png" alt="Find a court in your location"></a>
-                    <h3>Browse Courts</h3>
+                  
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
+
+              </form>
+                
             </div>
         </section>
+
         <footer>
-           <p>Educational Webdesign Development Purposes Only</p> 
-        </footer>
-    </body>
+            <p>Educational Webdesign Development Purposes Only</p> 
+         </footer>
+
+
+
+    
+    
+    
+</body>
 </html>
