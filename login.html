@@ -20,7 +20,8 @@
                     <ul> 
                         <li><a href="index.html">Home</a></li>    
                         <li class="current"><a href="login.html">Login</a></li>
-                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="booking.html">Book Courts</a></li>
+                        <li><a href="browsing.html">Browse Courts</a></li>
                         <li><a href="contact _us.html">Contact</a></li>
                         <li><a href="about.html">About us</a></li>
                     </ul>
@@ -29,7 +30,7 @@
         </header>
         <section id="newsletter">
             <div class="container">
-                <h1>Subcribe to our news letter, find out whats happening in the world of squash in Ireland</h1>
+                <h1>Keep up to date with the world of squash in Ireland</h1>
                 <form action="action.php">
                     <input type="email" placeholder="Enter Email ...">
                     <button type="submit" class="button_1">Subcribe</button>
@@ -37,35 +38,34 @@
             </div>
         </section>
         <section id="login">
-            <div class="container">
-              <form action="action_page.php" method="post">
-                <div class="container">
-                  <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-                  <button type="submit">Login</button>
-                  <label> <input type="checkbox" checked="checked" name="remember">Remember me</label>
-                </div>
-                  
-                <div class="container" style="background-color:#f1f1f1">
-                  <button type="button" class="cancelbtn">Cancel</button>
-                  <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-
-              </form>
-                
+            <div id="signup">
+                <h1>Sign In:</h1>
+                <form action="">
+                    <label for="emaillogin">Email:</label>
+                    <input type="email" name="email" id="emaillogin">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="pswlogin">
+                    <button id="button_1" class="button_1" onclick="validatelogin">Log In</button>
+                </form>
             </div>
+            <div id="register">
+                <h1>Register:</h1>
+                <form action="">
+                    <label for="emaillogin">Email:</label>
+                    <input type="email" name="email" id="emailsign">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="pswreg">
+                    <label for="password">Re-enter Password:</label>
+                    <input type="password" name="password" id="pswreg">
+                    <button id="button_1" class="button_1" onclick="validatereg">Register</button>
+                </form>
+            </div>
+            
         </section>
 
         <footer>
             <p>Educational Webdesign Development Purposes Only</p> 
          </footer>
 
-
-
-    
-    
-    
 </body>
 </html>

@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Court Booking</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS\js_external.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-    <!-- html code for side nav bar  -->
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Homepage</a>
-        <a href="login.html">Login</a>
-        <a href="booking.html">Book Courts</a>
-        <a href="contact _us.html">Contact</a>
-        <a href="about.html">About</a>
-    </div>
-    
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; </button>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Squash Courts Ireland | Welocme</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS\js_external.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        </head>
+    <body class="body">
+        <!-- HTML code for Navigation bar  -->
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Squash</span> Courts Ireland</h1>
+                </div>
+                <nav>
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>    
+                        <li><a href="login.html">Login</a></li>
+                        <li class="current"><a href="booking.html">Book Courts</a></li>
+                        <li><a href="browsing.html">Browse Courts</a></li>
+                        <li><a href="contact _us.html">Contact</a></li>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Keep up to date with the world of squash in Ireland</h1>
+                <form action="action.php">
+                    <input type="email" placeholder="Enter Email ...">
+                    <button type="submit" class="button_1">Subcribe</button>
+                </form>
+            </div>
+        </section>
 
-    <p></p>
-    
+        <section id="booking">
+            
+        </section>
+
+        <footer>
+            <p>Educational Webdesign Development Purposes Only</p> 
+         </footer>
+
 </body>
 </html>

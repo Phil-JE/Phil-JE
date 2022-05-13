@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS\js_external.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-    
-    <!-- html code for side nav bar  -->
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Homepage</a>
-        <a href="login.html">Login</a>
-        <a href="booking.html">Book Courts</a>
-        <a href="contact _us.html">Contact</a>
-        <a href="about.html">About</a>
-    </div>
-    
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; </button>
-    </div>
-
-        
-        <!-- html code for contact us form  -->
-        <div class="container">
-            <div style="text-align:center">
-              <h2>Contact Us</h2>
-              <p>Swing by for a cup of coffee, or leave us a message:</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Squash Courts Ireland | Welocme</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS\js_external.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        </head>
+    <body class="body">
+        <!-- HTML code for Navigation bar  -->
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Squash</span> Courts Ireland</h1>
+                </div>
+                <nav>
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>    
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="booking.html">Book Courts</a></li>
+                        <li><a href="browsing.html">Browse Courts</a></li>
+                        <li  class="current"><a href="contact _us.html">Contact</a></li>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="row">
-              <div class="column">
-                <img src="images/contactUsimage1.jpg" style="width:100%">
-              </div>
-              <div class="column">
-                <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                  <input type="submit" value="Submit">
+        </header>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Keep up to date with the world of squash in Ireland</h1>
+                <form action="action.php">
+                    <input type="email" placeholder="Enter Email ...">
+                    <button type="submit" class="button_1">Subcribe</button>
                 </form>
-              </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    
+        <section id="contactus">
+          <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="County">County</label>
+              <select id="County" name="County">
+                <option value="dublin">Dublin</option>
+                <option value="cork">Cork</option>
+                <option value="galway">Galway</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="button" class="button_1" value="Submit">
+          
+            </form>
+          </div>
+            
+        </section>
 
-    
-    
+        <footer>
+            <p>Educational Webdesign Development Purposes Only</p> 
+         </footer>
+
 </body>
 </html>
