@@ -4,7 +4,7 @@ body{
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  background-image: url("/images/background.jpg");
+  background-image: url("images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -76,7 +76,7 @@ header a:hover{
 /* showcase */
 #showcase{
   min-height: 400px;
-  background: url("/images/showcase.jpg") no-repeat center;
+  background: url("images/showcase.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
   color: #fdf902;
