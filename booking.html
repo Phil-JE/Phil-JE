@@ -21,7 +21,6 @@
                         <li><a href="index.html">Home</a></li>    
                         <li><a href="login.html">Login</a></li>
                         <li class="current"><a href="booking.html">Book Courts</a></li>
-                        <li><a href="browsing.html">Browse Courts</a></li>
                         <li><a href="contact _us.html">Contact</a></li>
                         <li><a href="about.html">About us</a></li>
                     </ul>
@@ -39,7 +38,37 @@
         </section>
 
         <section id="booking">
-            
+            <div id class="container">
+                <div class="booking">
+                    <h4>Booking Page</h4>
+                    <h6>You must be logged in to book courts!</h6>
+                    <form action="" class="leftside">
+                        <label for="County">County</label><br>
+                            <select id="County" name="County" >
+                                <option value="dublin">Dublin</option>
+                                <option value="cork">Cork</option>
+                                <option value="galway">Galway</option>
+                            </select><br>
+                        <label for="date">Select Date</label><br>
+                            <input type="date" class="datepicker"><br>
+
+                    </form>
+                    <form action="" class="righside">
+                        <label for="club">Club</label><br>
+                            <select id="club" name="club" >
+                                <option value="Junction 6">Junction 6</option>
+                                <option value="sportslink">Sportslink</option>
+                                <option value="sutton">Sutton</option>
+                            </select><br>
+                        <label for="time">Select Time</label><br>
+                            <input type="time" class="appt" name=" appt">    
+                        
+                    </form>
+                    <form action="" class="confirmbooking">
+                        <button name="" class="button_1" onclick="validatestate">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
         </section>
 
         <footer>
